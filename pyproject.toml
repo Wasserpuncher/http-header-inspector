@@ -1,0 +1,14 @@
+[project]
+name = "http-header-inspector"
+version = "0.1.0"
+description = "A lightweight CLI tool that fetches HTTP(S) response headers and highlights security and caching headers."
+authors = [{ name = "Kai" }]
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+dependencies = [
+  "requests>=2.31.0",
+]
+
+[project.scripts]
+header-inspect = "http_header_inspector.cli:main"
